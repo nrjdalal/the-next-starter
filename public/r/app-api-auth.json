@@ -31,15 +31,9 @@
     },
     {
       "type": "registry:file",
-      "target": "~/.env.development",
+      "target": "~/.example.env",
       "content": "BETTER_AUTH_SECRET=\n\nGITHUB_CLIENT_ID=\nGITHUB_CLIENT_SECRET=\n\nGOOGLE_CLIENT_ID=\nGOOGLE_CLIENT_SECRET=\n\nPOSTGRES_URL=\n",
-      "path": ".env.development"
-    },
-    {
-      "type": "registry:file",
-      "target": "~/.env.production",
-      "content": "BETTER_AUTH_SECRET=\n\nGITHUB_CLIENT_ID=\nGITHUB_CLIENT_SECRET=\n\nGOOGLE_CLIENT_ID=\nGOOGLE_CLIENT_SECRET=\n\nPOSTGRES_URL=\n",
-      "path": ".env.production"
+      "path": ".example.env"
     },
     {
       "type": "registry:file",
@@ -156,5 +150,5 @@
       "path": "src/components/ui/tooltip.tsx"
     }
   ],
-  "docs": "  --- What's next? ---\n\n  1. Update the necessary environment variables.\n  2. Execute `npm --env-file=.env drizzle-kit push` to create PostgreSQL tables.\n  3. Start the development server with `npm run dev`.\n  4. Access http://localhost:3000/access to test the sign-in/sign-up functionality.\n  5. Navigate to http://localhost:3000/x to verify the protected route."
+  "docs": "  --- What's next? ---\n\n  1. Rename `.example.env` to `.env.development`.\n  2. Update the necessary environment variables in `.env.development`.\n  3. Execute `npm --env-file=.env.development drizzle-kit push` to create PostgreSQL tables.\n  4. Start the development server with `npm run dev`.\n  5. Access http://localhost:3000/access to test the sign-in/sign-up functionality.\n  6. Navigate to http://localhost:3000/x to verify the protected route."
 }
