@@ -1,0 +1,40 @@
+{
+  "name": "nrjdalal",
+  "homepage": "https://nrjdalal.com",
+  "items": [
+    {
+      "name": "app-api-auth",
+      "files": [
+        {
+          "type": "registry:file",
+          "path": ".env.development"
+        },
+        {
+          "type": "registry:file",
+          "path": ".env.production"
+        },
+        {
+          "type": "registry:file",
+          "path": "drizzle.config.ts"
+        },
+        {
+          "type": "registry:file",
+          "path": "src/middleware.ts"
+        },
+        {
+          "type": "registry:page",
+          "path": "src/app/(auth)/access/page.tsx"
+        },
+        {
+          "type": "registry:page",
+          "path": "src/app/(dashboard)/layout.tsx"
+        },
+        {
+          "type": "registry:page",
+          "path": "src/app/(dashboard)/x/page.tsx"
+        }
+      ],
+      "docs": "  --- What's next? ---\n\n  1. Update the necessary environment variables.\n  2. Execute `npm --env-file=.env drizzle-kit push` to create PostgreSQL tables.\n  3. Start the development server with `npm run dev`.\n  4. Access http://localhost:3000/access to test the sign-in/sign-up functionality.\n  5. Navigate to http://localhost:3000/x to verify the protected route."
+    }
+  ]
+}
