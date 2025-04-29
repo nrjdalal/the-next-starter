@@ -23,6 +23,7 @@
         "next",
         "postgres",
         "react",
+        "sonner",
         "tailwind-merge"
       ],
       "devDependencies": [
