@@ -7,7 +7,9 @@
       "name": "app-api-auth",
       "type": "registry:file",
       "dependencies": [
+        "@radix-ui/react-avatar",
         "@radix-ui/react-dialog",
+        "@radix-ui/react-dropdown-menu",
         "@radix-ui/react-label",
         "@radix-ui/react-separator",
         "@radix-ui/react-slot",
@@ -31,6 +33,11 @@
           "type": "registry:file",
           "target": "app/api/auth/[...all]/route.ts",
           "path": "src/app/api/auth/[...all]/route.ts"
+        },
+        {
+          "type": "registry:component",
+          "target": "components/sidebar/user.tsx",
+          "path": "src/components/sidebar/user.tsx"
         },
         {
           "type": "registry:file",
@@ -94,8 +101,18 @@
         },
         {
           "type": "registry:ui",
+          "target": "components/ui/avatar.tsx",
+          "path": "src/components/ui/avatar.tsx"
+        },
+        {
+          "type": "registry:ui",
           "target": "components/ui/button.tsx",
           "path": "src/components/ui/button.tsx"
+        },
+        {
+          "type": "registry:ui",
+          "target": "components/ui/dropdown-menu.tsx",
+          "path": "src/components/ui/dropdown-menu.tsx"
         },
         {
           "type": "registry:ui",
