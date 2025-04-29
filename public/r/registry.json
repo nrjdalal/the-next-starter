@@ -161,6 +161,30 @@
           "path": "src/components/devtools.tsx"
         }
       ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "drizzle.config",
+      "type": "registry:file",
+      "dependencies": [
+        "drizzle-orm",
+        "postgres"
+      ],
+      "devDependencies": [
+        "drizzle-kit"
+      ],
+      "files": [
+        {
+          "type": "registry:file",
+          "target": "~/drizzle.config.ts",
+          "path": "drizzle.config.ts"
+        },
+        {
+          "type": "registry:file",
+          "target": "db/index.ts",
+          "path": "src/db/index.ts"
+        }
+      ]
     }
   ]
 }
