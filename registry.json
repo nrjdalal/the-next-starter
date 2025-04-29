@@ -4,7 +4,12 @@
   "items": [
     {
       "name": "drizzle.config",
-      "files": [{ "type": "registry:file", "path": "src/db/index.ts" }]
+      "files": [
+        {
+          "type": "registry:file",
+          "path": "src/db/index.ts"
+        }
+      ]
     },
     {
       "name": "app-api-auth",
