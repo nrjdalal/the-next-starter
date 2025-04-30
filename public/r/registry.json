@@ -7,13 +7,6 @@
       "name": "app-api-auth",
       "type": "registry:file",
       "dependencies": [
-        "@radix-ui/react-avatar",
-        "@radix-ui/react-dialog",
-        "@radix-ui/react-dropdown-menu",
-        "@radix-ui/react-label",
-        "@radix-ui/react-separator",
-        "@radix-ui/react-slot",
-        "@radix-ui/react-tooltip",
         "@remixicon/react",
         "better-auth",
         "class-variance-authority",
@@ -22,6 +15,7 @@
         "lucide-react",
         "next",
         "postgres",
+        "radix-ui",
         "react",
         "sonner",
         "tailwind-merge"
