@@ -4,33 +4,6 @@
   "items": [
     {
       "$schema": "https://ui.shadcn.com/schema/registry-item.json",
-      "name": "app-providers",
-      "type": "registry:file",
-      "dependencies": [
-        "@tanstack/react-query",
-        "lucide-react",
-        "next-themes",
-        "react",
-        "sonner"
-      ],
-      "devDependencies": [
-        "@tanstack/react-query-devtools"
-      ],
-      "files": [
-        {
-          "type": "registry:file",
-          "target": "app/providers.tsx",
-          "path": "src/app/providers.tsx"
-        },
-        {
-          "type": "registry:component",
-          "target": "components/devtools.tsx",
-          "path": "src/components/devtools.tsx"
-        }
-      ]
-    },
-    {
-      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
       "name": "better-auth",
       "type": "registry:file",
       "dependencies": [
@@ -195,6 +168,33 @@
           "type": "registry:file",
           "target": "db/index.ts",
           "path": "src/db/index.ts"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "providers",
+      "type": "registry:file",
+      "dependencies": [
+        "@tanstack/react-query",
+        "lucide-react",
+        "next-themes",
+        "react",
+        "sonner"
+      ],
+      "devDependencies": [
+        "@tanstack/react-query-devtools"
+      ],
+      "files": [
+        {
+          "type": "registry:component",
+          "target": "components/devtools.tsx",
+          "path": "src/components/devtools.tsx"
+        },
+        {
+          "type": "registry:file",
+          "target": "app/providers.tsx",
+          "path": "src/app/providers.tsx"
         }
       ]
     }

@@ -48,6 +48,15 @@
           "path": "src/db/index.ts"
         }
       ]
+    },
+    {
+      "name": "providers",
+      "files": [
+        {
+          "type": "registry:file",
+          "path": "src/app/providers.tsx"
+        }
+      ]
     }
   ]
 }
