@@ -176,7 +176,7 @@
     },
     {
       "$schema": "https://ui.shadcn.com/schema/registry-item.json",
-      "name": "drizzle.config",
+      "name": "drizzle",
       "type": "registry:file",
       "dependencies": [
         "drizzle-orm",

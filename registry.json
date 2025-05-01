@@ -33,8 +33,12 @@
       "docs": "  --- What's next? ---\n\n  1. Rename `.example.env` to `.env.development`.\n  2. Update the necessary environment variables in `.env.development`.\n  3. Execute `npm --env-file=.env.development drizzle-kit push` to create PostgreSQL tables.\n  4. Start the development server with `npm run dev`.\n  5. Access http://localhost:3000/access to test the sign-in/sign-up functionality.\n  6. Navigate to http://localhost:3000/x to verify the protected route."
     },
     {
-      "name": "drizzle.config",
+      "name": "drizzle",
       "files": [
+        {
+          "type": "registry:file",
+          "path": "drizzle.config.ts"
+        },
         {
           "type": "registry:file",
           "path": "src/db/index.ts"
