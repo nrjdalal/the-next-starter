@@ -4,7 +4,34 @@
   "items": [
     {
       "$schema": "https://ui.shadcn.com/schema/registry-item.json",
-      "name": "app-api-auth",
+      "name": "app-providers",
+      "type": "registry:file",
+      "dependencies": [
+        "@tanstack/react-query",
+        "lucide-react",
+        "next-themes",
+        "react",
+        "sonner"
+      ],
+      "devDependencies": [
+        "@tanstack/react-query-devtools"
+      ],
+      "files": [
+        {
+          "type": "registry:file",
+          "target": "app/providers.tsx",
+          "path": "src/app/providers.tsx"
+        },
+        {
+          "type": "registry:component",
+          "target": "components/devtools.tsx",
+          "path": "src/components/devtools.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "better-auth",
       "type": "registry:file",
       "dependencies": [
         "@remixicon/react",
@@ -25,11 +52,6 @@
       ],
       "files": [
         {
-          "type": "registry:file",
-          "target": "app/api/auth/[...all]/route.ts",
-          "path": "src/app/api/auth/[...all]/route.ts"
-        },
-        {
           "type": "registry:component",
           "target": "components/sidebar/user.tsx",
           "path": "src/components/sidebar/user.tsx"
@@ -48,6 +70,11 @@
           "type": "registry:file",
           "target": "app/(dashboard)/layout.tsx",
           "path": "src/app/(dashboard)/layout.tsx"
+        },
+        {
+          "type": "registry:file",
+          "target": "app/api/auth/[...all]/route.ts",
+          "path": "src/app/api/auth/[...all]/route.ts"
         },
         {
           "type": "registry:file",
@@ -146,33 +173,6 @@
         }
       ],
       "docs": "  --- What's next? ---\n\n  1. Rename `.example.env` to `.env.development`.\n  2. Update the necessary environment variables in `.env.development`.\n  3. Execute `npm --env-file=.env.development drizzle-kit push` to create PostgreSQL tables.\n  4. Start the development server with `npm run dev`.\n  5. Access http://localhost:3000/access to test the sign-in/sign-up functionality.\n  6. Navigate to http://localhost:3000/x to verify the protected route."
-    },
-    {
-      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
-      "name": "app-providers",
-      "type": "registry:file",
-      "dependencies": [
-        "@tanstack/react-query",
-        "lucide-react",
-        "next-themes",
-        "react",
-        "sonner"
-      ],
-      "devDependencies": [
-        "@tanstack/react-query-devtools"
-      ],
-      "files": [
-        {
-          "type": "registry:file",
-          "target": "app/providers.tsx",
-          "path": "src/app/providers.tsx"
-        },
-        {
-          "type": "registry:component",
-          "target": "components/devtools.tsx",
-          "path": "src/components/devtools.tsx"
-        }
-      ]
     },
     {
       "$schema": "https://ui.shadcn.com/schema/registry-item.json",

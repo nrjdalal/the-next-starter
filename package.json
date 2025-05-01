@@ -8,7 +8,7 @@
     "drizzle": "bun --env-file=.env.development drizzle-kit push",
     "lint": "next lint",
     "prepare": "npx simple-git-hooks",
-    "registry": "npx smart-registry@canary -p 'src/app/providers.tsx' 'src/app/api/auth/[...all]/route.ts'",
+    "registry": "npx smart-registry@canary -p 'src/app/providers.tsx'",
     "start": "next start",
     "studio": "bun --env-file=.env.development drizzle-kit studio"
   },
