@@ -25,14 +25,14 @@
       ],
       "files": [
         {
-          "type": "registry:component",
-          "target": "components/sidebar/user.tsx",
-          "path": "src/components/sidebar/user.tsx"
-        },
-        {
           "type": "registry:file",
           "target": "~/.example.env",
           "path": ".example.env"
+        },
+        {
+          "type": "registry:component",
+          "target": "components/sidebar/user.tsx",
+          "path": "src/components/sidebar/user.tsx"
         },
         {
           "type": "registry:file",
@@ -187,14 +187,14 @@
       ],
       "files": [
         {
-          "type": "registry:component",
-          "target": "components/devtools.tsx",
-          "path": "src/components/devtools.tsx"
-        },
-        {
           "type": "registry:file",
           "target": "app/providers.tsx",
           "path": "src/app/providers.tsx"
+        },
+        {
+          "type": "registry:component",
+          "target": "components/devtools.tsx",
+          "path": "src/components/devtools.tsx"
         }
       ]
     }
