@@ -1,6 +1,6 @@
 "use client"
 
-import { useLayoutEffect, useState } from "react"
+import { useEffect, useState } from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 
@@ -14,16 +14,23 @@ export default function Component() {
   const pathname = usePathname()
   const { data: session } = useSession()
 
+  const [mounted, setMounted] = useState(false)
   const [scrolled, setScrolled] = useState(false)
 
-  useLayoutEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 0)
-    window.addEventListener("scroll", onScroll, { passive: true })
-    onScroll()
-    return () => window.removeEventListener("scroll", onScroll)
+  useEffect(() => {
+    setMounted(true)
   }, [])
 
-  if (pathname !== "/") return null
+  useEffect(() => {
+    if (!mounted) return
+    const onScroll = () => setScrolled(window.scrollY > 0)
+    window.addEventListener("scroll", onScroll, { passive: true })
+    onScroll() // detect initial position
+    return () => window.removeEventListener("scroll", onScroll)
+  }, [mounted])
+
+  // don’t render anything until we know our scroll state
+  if (!mounted || pathname !== "/") return null
 
   return (
     <div
