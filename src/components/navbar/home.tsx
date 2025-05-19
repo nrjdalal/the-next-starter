@@ -43,11 +43,7 @@ export default function Component() {
         <div className="flex items-center gap-2.5">
           {session?.user ? (
             <Link href="/x">
-              <Button
-                className="w-24 cursor-pointer"
-                size="sm"
-                variant="outline"
-              >
+              <Button className="w-24 cursor-pointer" size="sm" variant="outline">
                 Dashboard
               </Button>
             </Link>

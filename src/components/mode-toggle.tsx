@@ -10,9 +10,7 @@ export default function Component() {
 
   const smartToggle = () => {
     /* The smart toggle by @nrjdalal */
-    const prefersDarkScheme = window.matchMedia(
-      "(prefers-color-scheme: dark)",
-    ).matches
+    const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)").matches
     if (theme === "system") {
       setTheme(prefersDarkScheme ? "light" : "dark")
     } else if (
