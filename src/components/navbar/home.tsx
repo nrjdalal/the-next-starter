@@ -1,6 +1,6 @@
 "use client"
 
-import { useEffect, useState } from "react"
+import { useLayoutEffect, useState } from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 
@@ -16,7 +16,7 @@ export default function Component() {
 
   const [scrolled, setScrolled] = useState(false)
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 0)
     window.addEventListener("scroll", onScroll, { passive: true })
     onScroll()
