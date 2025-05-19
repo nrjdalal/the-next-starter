@@ -9,12 +9,13 @@
     "drizzle:prod": "bun --env-file=.env.production drizzle-kit push",
     "lint": "next lint",
     "prepare": "npx simple-git-hooks",
+    "registry": "npx smart-registry@latest -r",
     "start": "next start",
     "studio": "bun --env-file=.env.development drizzle-kit studio",
     "studio:prod": "bun --env-file=.env.production drizzle-kit studio"
   },
   "simple-git-hooks": {
-    "pre-commit": "npx lint-staged --verbose",
+    "pre-commit": "npm run registry && npx lint-staged --verbose",
     "commit-msg": "npx commitlint --edit $1"
   },
   "commitlint": {
