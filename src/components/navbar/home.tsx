@@ -14,23 +14,16 @@ export default function Component() {
   const pathname = usePathname()
   const { data: session } = useSession()
 
-  const [mounted, setMounted] = useState(false)
   const [scrolled, setScrolled] = useState(false)
 
   useEffect(() => {
-    setMounted(true)
-  }, [])
-
-  useEffect(() => {
-    if (!mounted) return
     const onScroll = () => setScrolled(window.scrollY > 0)
     window.addEventListener("scroll", onScroll, { passive: true })
-    onScroll() // detect initial position
+    onScroll()
     return () => window.removeEventListener("scroll", onScroll)
-  }, [mounted])
+  }, [])
 
-  // don’t render anything until we know our scroll state
-  if (!mounted || pathname !== "/") return null
+  if (pathname !== "/") return null
 
   return (
     <div
