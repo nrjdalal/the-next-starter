@@ -1,8 +1,9 @@
 "use client"
 
+import { useEffect, useState } from "react"
+
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools"
 import { CodeXml, ExternalLink } from "lucide-react"
-import { useEffect, useState } from "react"
 
 const config = {
   GITHUB: "nrjdalal/the-next-starter",
@@ -24,7 +25,7 @@ const Links = [
   },
 ]
 
-export const DevTools = () => {
+export default function Component() {
   const [expandDevtools, setExpandDevtools] = useState(false)
   const [dimensions, setDimensions] = useState({ width: 0, height: 0 })
 
