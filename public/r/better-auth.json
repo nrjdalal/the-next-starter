@@ -62,7 +62,7 @@
     {
       "type": "registry:file",
       "target": "middleware.ts",
-      "content": "import { NextRequest, NextResponse } from \"next/server\"\n\nimport { getSessionCookie } from \"better-auth/cookies\"\n\nexport async function middleware(request: NextRequest) {\n  const sessionCookie = getSessionCookie(request)\n  if (!sessionCookie) {\n    return NextResponse.redirect(new URL(\"/access\", request.url))\n  }\n  return NextResponse.next()\n}\n\nexport const config = {\n  matcher: [\"/x\"],\n}\n",
+      "content": "import { NextRequest, NextResponse } from \"next/server\"\n\nimport { getSessionCookie } from \"better-auth/cookies\"\n\nexport async function middleware(request: NextRequest) {\n  const sessionCookie = getSessionCookie(request)\n\n  if (!sessionCookie) {\n    return NextResponse.redirect(new URL(\"/access\", request.url))\n  }\n\n  return NextResponse.next()\n}\n\nexport const config = {\n  matcher: [\"/x\"],\n}\n",
       "path": "src/middleware.ts"
     },
     {
