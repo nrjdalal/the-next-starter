@@ -10,8 +10,20 @@
           "path": ".example.env"
         },
         {
+          "type": "registry:component",
+          "path": "src/components/navbar/home.tsx"
+        },
+        {
           "type": "registry:file",
           "path": "drizzle.config.ts"
+        },
+        {
+          "type": "registry:file",
+          "path": "src/app/(dashboard)/layout.tsx"
+        },
+        {
+          "type": "registry:file",
+          "path": "src/app/api/auth/[...all]/route.ts"
         },
         {
           "type": "registry:file",
@@ -19,19 +31,7 @@
         },
         {
           "type": "registry:page",
-          "path": "src/app/(auth)/access/page.tsx"
-        },
-        {
-          "type": "registry:page",
-          "path": "src/app/(dashboard)/layout.tsx"
-        },
-        {
-          "type": "registry:page",
           "path": "src/app/(dashboard)/x/page.tsx"
-        },
-        {
-          "type": "registry:file",
-          "path": "src/app/api/auth/[...all]/route.ts"
         }
       ],
       "docs": "  --- What's next? ---\n\n  1. Rename `.example.env` to `.env.development`.\n  2. Update the necessary environment variables in `.env.development`.\n  3. Execute `npm --env-file=.env.development drizzle-kit push` to create PostgreSQL tables.\n  4. Start the development server with `npm run dev`.\n  5. Access http://localhost:3000/access to test the sign-in/sign-up functionality.\n  6. Navigate to http://localhost:3000/x to verify the protected route."

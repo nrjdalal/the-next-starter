@@ -85,6 +85,7 @@
         "drizzle-orm",
         "lucide-react",
         "next",
+        "next-themes",
         "postgres",
         "radix-ui",
         "sonner"
@@ -97,6 +98,21 @@
           "type": "registry:file",
           "target": "~/.example.env",
           "path": ".example.env"
+        },
+        {
+          "type": "registry:component",
+          "target": "components/access.tsx",
+          "path": "src/components/access.tsx"
+        },
+        {
+          "type": "registry:component",
+          "target": "components/mode-toggle.tsx",
+          "path": "src/components/mode-toggle.tsx"
+        },
+        {
+          "type": "registry:component",
+          "target": "components/navbar/home.tsx",
+          "path": "src/components/navbar/home.tsx"
         },
         {
           "type": "registry:component",
@@ -135,11 +151,6 @@
         },
         {
           "type": "registry:page",
-          "target": "app/(auth)/access/page.tsx",
-          "path": "src/app/(auth)/access/page.tsx"
-        },
-        {
-          "type": "registry:page",
           "target": "app/(dashboard)/x/page.tsx",
           "path": "src/app/(dashboard)/x/page.tsx"
         },
@@ -167,6 +178,11 @@
           "type": "registry:ui",
           "target": "components/ui/button.tsx",
           "path": "src/components/ui/button.tsx"
+        },
+        {
+          "type": "registry:ui",
+          "target": "components/ui/dialog.tsx",
+          "path": "src/components/ui/dialog.tsx"
         },
         {
           "type": "registry:ui",
