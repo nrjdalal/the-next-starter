@@ -79,6 +79,7 @@
       "name": "better-auth",
       "type": "registry:file",
       "dependencies": [
+        "@hookform/resolvers",
         "@remixicon/react",
         "better-auth",
         "class-variance-authority",
@@ -88,7 +89,10 @@
         "next-themes",
         "postgres",
         "radix-ui",
-        "sonner"
+        "react-hook-form",
+        "resend",
+        "sonner",
+        "zod"
       ],
       "devDependencies": [
         "drizzle-kit"
@@ -188,6 +192,11 @@
           "type": "registry:ui",
           "target": "components/ui/dropdown-menu.tsx",
           "path": "src/components/ui/dropdown-menu.tsx"
+        },
+        {
+          "type": "registry:ui",
+          "target": "components/ui/form.tsx",
+          "path": "src/components/ui/form.tsx"
         },
         {
           "type": "registry:ui",
