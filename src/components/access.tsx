@@ -69,7 +69,7 @@ export default function Component() {
       </DialogTrigger>
       <DialogContent className="max-w-md sm:max-w-md">
         <DialogHeader className="sr-only">
-          <DialogTitle className="text-center">Login</DialogTitle>
+          <DialogTitle className="text-center">Sign in/up</DialogTitle>
         </DialogHeader>
         <div className="flex flex-col gap-6">
           <div className="flex flex-col items-center gap-2">
@@ -95,15 +95,21 @@ export default function Component() {
                         className="text-center focus:placeholder:opacity-0"
                         placeholder="admin@nrjdalal.com"
                         {...field}
+                        disabled={loader === "email"}
                       />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
                 )}
               />
-              <Button type="submit" variant="secondary" className="w-full cursor-pointer">
+              <Button
+                type="submit"
+                variant="secondary"
+                className="w-full cursor-pointer"
+                disabled={loader === "email"}
+              >
                 {loader === "email" ? <Loader2 className="size-5 animate-spin" /> : null}
-                Login
+                Sign in/up
               </Button>
             </form>
           </Form>
