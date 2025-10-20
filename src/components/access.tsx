@@ -99,7 +99,7 @@ export default function Component() {
                         id={field.name}
                         type="email"
                         name={field.name}
-                        className="text-center focus:placeholder:opacity-0"
+                        className="focus:placeholder:opacity-0"
                         value={field.state.value}
                         onBlur={field.handleBlur}
                         onChange={(e) => field.handleChange(e.target.value)}
