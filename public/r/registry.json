@@ -79,8 +79,8 @@
       "name": "better-auth",
       "type": "registry:file",
       "dependencies": [
-        "@hookform/resolvers",
         "@remixicon/react",
+        "@tanstack/react-form",
         "better-auth",
         "class-variance-authority",
         "drizzle-orm",
@@ -89,7 +89,6 @@
         "next-themes",
         "postgres",
         "radix-ui",
-        "react-hook-form",
         "resend",
         "sonner",
         "zod"
@@ -195,8 +194,8 @@
         },
         {
           "type": "registry:ui",
-          "target": "components/ui/form.tsx",
-          "path": "src/components/ui/form.tsx"
+          "target": "components/ui/field.tsx",
+          "path": "src/components/ui/field.tsx"
         },
         {
           "type": "registry:ui",
