@@ -27,7 +27,7 @@
         },
         {
           "type": "registry:file",
-          "path": "src/middleware.ts"
+          "path": "src/proxy.ts"
         },
         {
           "type": "registry:page",

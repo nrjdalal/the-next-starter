@@ -149,8 +149,8 @@
         },
         {
           "type": "registry:file",
-          "target": "middleware.ts",
-          "path": "src/middleware.ts"
+          "target": "proxy.ts",
+          "path": "src/proxy.ts"
         },
         {
           "type": "registry:page",
